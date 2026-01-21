@@ -1,0 +1,189 @@
+# 综合抽取的恶意关键词 / payload（已去重，供检测 request_url/request_uri/body 使用）
+' or '1'='1
+' or 1=1
+or 1=1
+and 1=1
+' or ''=''
+'||'1'='1
+union select
+union all select
+order by 1--
+-- 
+--#
+/* */
+xp_cmdshell
+information_schema
+select .* from
+drop table
+insert into
+like '%'
+;shutdown
+;drop table
+;wget http
+;curl http
+;python -c
+powershell -nop -c
+`whoami`
+$(whoami)
+`id`
+;nc -l
+;bash -i
+;perl -e
+;php -r
+;cmd /c
+;start /b
+<script>
+</script>
+<img src=x onerror=alert(1)>
+javascript:
+document.cookie
+onmouseover=
+onerror=
+<svg onload=alert(1)
+<iframe
+prompt(
+alert(
+confirm(
+<svg>
+<math>
+<data:text/html;base64,
+php://input
+/etc/passwd
+../../../../etc/passwd
+../
+..\\
+%2e%2e%2f
+%2e%2e%5c
+%00
+%0a
+%0d
+%09
+%2f
+file://
+expect://
+data://text/plain;base64
+base64_decode(
+eval(
+system(
+exec(
+passthru(
+shell_exec(
+preg_replace(
+__import__
+import os
+os.system(
+__import__("os")
+127.0.0.1
+169.254.169.254
+metadata.google.internal
+http://169.254.169.254/
+169.254.170.2
+127.0.0.1:80
+2130706433
+2852039166
+0xA9FEA9FE
+[::ffff:127.0.0.1]
+127.0.0.1.nip.io
+localtest.me
+/admin
+/admin/login
+/.git/config
+/.env
+/robots.txt
+/WEB-INF/web.xml
+/console
+manager/html
+wp-login.php
+xmlrpc.php
+?cmd=
+?exec=
+/?search=
+/?q=
+/?url=
+/?redirect=
+?next=
+%2Fetc%2Fpasswd
+%2e%2e%2f%2e%2e%2f
+%2e%2e%5c%2e%2e%5c
+../etc/passwd%00
+/..%2f
+/..%5c
+%2f%2e%2e%2f
+%2e%2e;%2f
+' or 'x'='x
+' and 'one'='one
+1' order by 1--+
+1' order by 2--+
+group by 1 having 1=1--
+limit 1;#
+waitfor delay '0:0:30'--
+sleep(10)
+(select (sleep(10)))
+concat(0x
+information_schema.tables
+load_file(
+into outfile
+outfile '/var/www/html/shell.php'
+select @@version
+updatexml(
+extractvalue(
+benchmark(
+dbms_xmlgen.getxml(
+%2f%2e%2e%2f%2e%2e
+..;/
+.7z
+.git
+.gitignore
+.htaccess
+.htpasswd
+.env
+.env.local
+.env.dev
+npm-debug.log
+composer.lock
+/WEB-INF/
+jsp/
+aspx
+.\\
+%5c
+%252e%252e%252f
+%25
++ or +
+|| 
+%7c%7c
+eval%28
+prompt%28
+onload%3dalert%281%29
+%3Cscript%3E
+%3Ciframe%3E
+jsonpCallback=alert
+callback=alert(1)
+__proto__
+constructor.prototype
+window.location
+document.write(
+postMessage(
+alert%281%29
+confirm%28
+console.log(
+%3Csvg%20onload%3Dalert%281%29%3E
+%3Csvg%20%2 Fonload%3Dalert%281%29%3E
+# blind-ssrf/ssrf evasion
+http://[::ffff:a9fe:a9fe]/latest/
+http://2130706433/
+http://2852039166
+http://0xA9.0xFE.0xA9.0xFE/latest/
+# NoSQL indicators
+$ne
+$or
+$where:
+// common scanner/fuzz patterns
+admin.php
+login.php
+config.php
+setup.php
+install.php
+install.sql
+shell.php
+cmd.php
+rce.php
