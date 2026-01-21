@@ -1,0 +1,89 @@
+{
+  "sqli": [
+    "' or '1'='1",
+    "' or 1=1",
+    "or 1=1",
+    "union select",
+    "union all select",
+    "order by 1--",
+    "information_schema",
+    "select .* from",
+    "drop table",
+    "insert into",
+    "updatexml(",
+    "extractvalue(",
+    "load_file(",
+    "into outfile",
+    "benchmark("
+  ],
+  "xss": [
+    "<script>",
+    "</script>",
+    "<img src=x onerror=alert(1)>",
+    "javascript:",
+    "document.cookie",
+    "onerror=",
+    "<svg onload=alert(1)",
+    "<iframe",
+    "alert(",
+    "prompt("
+  ],
+  "lfi_rfi": [
+    "/etc/passwd",
+    "../../../../etc/passwd",
+    "php://input",
+    "file://",
+    "expect://",
+    "../",
+    "..\\",
+    "%2e%2e%2f"
+  ],
+  "rce": [
+    "xp_cmdshell",
+    ";wget http",
+    ";curl http",
+    "`whoami`",
+    "$(whoami)",
+    "powershell -nop -c",
+    "system(",
+    "exec(",
+    "eval(" 
+  ],
+  "ssrf": [
+    "169.254.169.254",
+    "metadata.google.internal",
+    "http://169.254.169.254/",
+    "169.254.170.2",
+    "2130706433",
+    "2852039166",
+    "[::ffff:127.0.0.1]"
+  ],
+  "traversal": [
+    "../",
+    "..\\",
+    "%2e%2e%2f",
+    "%2e%2e%5c",
+    "%2f%2e%2e%2f"
+  ],
+  "sensitive_paths": [
+    "/.git/config",
+    "/.env",
+    "/robots.txt",
+    "/admin/login",
+    "/wp-login.php",
+    "/xmlrpc.php",
+    "/WEB-INF/web.xml"
+  ],
+  "nosql": [
+    "$ne",
+    "$or",
+    "$where:"
+  ],
+  "misc": [
+    "base64_decode(",
+    "eval(",
+    "preg_replace(",
+    "__import__",
+    "import os"
+  ]
+}
